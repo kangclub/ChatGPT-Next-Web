@@ -5,7 +5,8 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 0 * * *" # every day
+   # - cron: "0 0 * * *" # every day
+   - cron: "0 0 1 * *" # 每个月的第一天凌晨12点执行任务
   workflow_dispatch:
 
 jobs:
